@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Atividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 18px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color:whitec">Minhas Atividades</h1>
+    </header>
+    <main>
+        <section id="front-end">
+            <h2>Programação Front-End</h2>
+            <ul id="front-end-list"></ul>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const frontEndList = document.getElementById("front-end-list");
+
+            // Função para adicionar itens à lista
+            function addItem(list, count) {
+                for (let i = 1; i <= count; i++) {
+                    const item = document.createElement("li");
+                    item.innerHTML = `<a href="ex${i}.html">Atividade ${i}</a>`;
+                    list.appendChild(item);
+                }
+            }
+
+            // Adicionando itens à lista
+            addItem(frontEndList, 50);
+        });
+    </script>
+</body>
+</html>
