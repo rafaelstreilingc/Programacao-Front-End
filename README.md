@@ -1,4 +1,4 @@
-# Programação Front-End 💻
+# Programação Front-End / Front-End Programming 💻
 
 ## 🇧🇷 O que eu aprendo
 - Desenvolvimento de interfaces de usuário
